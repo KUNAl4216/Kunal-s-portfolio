@@ -99,7 +99,7 @@ function App() {
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0">
             <img
-                src="src/newm.jpg"
+                src="https://raw.githubusercontent.com/KUNAl4216/Kunal-s-portfolio/main/src/newm.jpg"
                 alt="Profile"
                 className="rounded-full w-64 h-64 object-cover mx-auto shadow-xl border-4 border-[#ff004f]"
               />
