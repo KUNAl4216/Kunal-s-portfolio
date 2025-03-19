@@ -17,7 +17,7 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <span className="text-xl font-bold text-[#EAEAEA]">
-              
+              {/* Add Logo or Branding Here */}
             </span>
           </div>
 
@@ -50,7 +50,7 @@ export default function Navigation() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:your.raychandanikunal@gmail.com"
+                href="raychandanikunal@gmail.com"
                 className="text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
               >
                 <Mail className="w-5 h-5" />
@@ -61,7 +61,10 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => {
+                console.log("Menu toggled:", !isOpen);
+                setIsOpen(!isOpen);
+              }}
               className="text-[#EAEAEA]"
             >
               <svg
@@ -93,6 +96,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
+<<<<<<< HEAD
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-100 sm:px-3">
             {navItems.map((item) => (
@@ -106,6 +110,19 @@ export default function Navigation() {
               </a>
             ))}
           </div>
+=======
+        <div className="md:hidden absolute top-16 left-0 w-full bg-[#121212] px-4 pt-4 pb-6 shadow-lg transition-all duration-300">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="block text-[#EAEAEA] py-2 px-3 rounded-lg hover:bg-[#ff004f] dark:hover:bg-[#00BFFF] transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+>>>>>>> a206c27 (Updated portfolio files)
         </div>
       )}
     </nav>

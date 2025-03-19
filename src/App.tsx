@@ -206,22 +206,22 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-[#121212] dark:bg-[#121212]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="projects" className="py-20 bg-[#121212] dark:bg-[#121212] w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <h2 className="text-3xl font-bold mb-12 text-[#EAEAEA]">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="bg-[#282828] dark:bg-[#282828] rounded-lg p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                className="bg-[#282828] dark:bg-[#282828] rounded-lg p-6 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 w-full"
               >
                 <div className="flex items-center mb-4">
                   <div className="p-2 bg-[#ff004f] dark:bg-[#00BFFF] rounded-lg">
                     {project.icon}
                   </div>
-                  <h3 className="text-xl font-semibold ml-4 text-[#EAEAEA]">{project.title}</h3>
+                  <h3 className="text-xl font-semibold ml-4 text-[#EAEAEA] break-words">{project.title}</h3>
                 </div>
-                <p className="text-[#EAEAEA] dark:text-gray-300 mb-4">
+                <p className="text-[#EAEAEA] dark:text-gray-300 mb-4 break-words">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
