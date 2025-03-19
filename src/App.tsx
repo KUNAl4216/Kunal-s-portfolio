@@ -14,7 +14,7 @@ const projects = [
   {
     title: ' ESP32 AI Voice Assistant',
     description: 'ESP32-based AI voice assistant with real-time speech-to-text and text-to-speech using Deepgram and ChatGPT APIs.',
-    githubUrl: 'https://github.com/users/KUNAl4216/projects/3',
+    githubUrl: 'https://github.com/KUNAl4216/ESP32-AI-Voice-Assistant',
     icon: <Code className="w-8 h-8" />,
     tags: [ 'C', ],
   },
