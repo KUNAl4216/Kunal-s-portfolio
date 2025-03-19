@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import Navigation from './components/Navigation';
 import ThemeToggle from './components/ThemeToggle';
 import { Download, Github, Linkedin, Mail, Code, Layout, Cpu, Phone } from 'lucide-react';
@@ -68,13 +69,16 @@ function App() {
   
 
   return (
-    <div className="min-h-screen bg-[#121212] dark:bg-[#121212] text-[#EAEAEA] dark:text-[#EAEAEA]">
+    <div className="min-h-screen bg-[#121212] dark:bg-[#121212] text-[#EAEAEA] dark:text-[#EAEAEA] overflow-x-hidden">
+      <Helmet>
+        <title>Kunal Raychandani</title>
+      </Helmet>
       <ThemeToggle />
       <Navigation />
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-10 bg-gradient-to-b from-[#121212] to-[#121212] dark:from-[#121212] dark:to-[#121212]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="home" className="pt-20 pb-10 bg-gradient-to-b from-[#121212] to-[#121212] dark:from-[#121212] dark:to-[#121212] w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
