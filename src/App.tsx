@@ -20,7 +20,7 @@ const projects = [
     tags: [ 'C', ],
   },
   {
-    title: 'Kernel_to_userspace_communication',
+    title: 'Kernel_to_userspace',
     description: 'Guide on communication between the Linux kernel and user space, covering system calls, drivers, and IPC mechanisms.',
     githubUrl: 'https://github.com/KUNAl4216/Kernel_to_userspace',
     icon: <Cpu className="w-8 h-8" />,
