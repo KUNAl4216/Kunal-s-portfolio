@@ -96,21 +96,6 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-<<<<<<< HEAD
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-100 sm:px-3">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block px-3 py-2 text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-=======
         <div className="md:hidden absolute top-16 left-0 w-full bg-[#121212] px-4 pt-4 pb-6 shadow-lg transition-all duration-300">
           {navItems.map((item) => (
             <a
@@ -122,7 +107,6 @@ export default function Navigation() {
               {item.label}
             </a>
           ))}
->>>>>>> a206c27 (Updated portfolio files)
         </div>
       )}
     </nav>
