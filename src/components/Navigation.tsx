@@ -17,7 +17,7 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <span className="text-xl font-bold text-[#EAEAEA]">
-              
+              {/* Logo or Brand Name */}
             </span>
           </div>
 
@@ -89,27 +89,49 @@ export default function Navigation() {
             </button>
           </div>
         </div>
-      </div>
 
-return (
-  <nav>
-    {/* Mobile Navigation */}
-    {isOpen && (
-      <div className="md:hidden fixed inset-0 bg-black z-50">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="block px-3 py-2 text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden fixed inset-0 bg-black z-50">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block px-3 py-2 text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="flex items-center space-x-4 pt-3">
+                <a
+                  href="https://github.com/KUNAl4216"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kunal-raychandani-76591a19b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="mailto:your.raychandanikunal@gmail.com"
+                  className="text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
-    )}
-  </nav>
-);
-
+    </nav>
+  );
+}
