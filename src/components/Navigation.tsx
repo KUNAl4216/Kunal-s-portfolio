@@ -91,25 +91,23 @@ export default function Navigation() {
         </div>
       </div>
 
-return (
-  <nav>
-    {/* Mobile Navigation */}
-    {isOpen && (
-      <div className="md:hidden fixed inset-0 bg-black z-50">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="block px-3 py-2 text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-100 sm:px-3">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="block px-3 py-2 text-[#EAEAEA] hover:text-[#ff004f] dark:hover:text-[#00BFFF]"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
-  </nav>
-);
-
+      )}
+    </nav>
+  );
+}
