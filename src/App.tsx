@@ -87,7 +87,7 @@ function App() {
               <div className="flex space-x-4">
                 <a
                   href="https://raw.githubusercontent.com/KUNAl4216/Kunal-s-portfolio/main/CV.pdf"
-                  className="inline-flex items-center px-6 py-3 bg-[#ff004f] text-[#EAEAEA] rounded-lg hover:bg-[#282828] transition-colors"
+                  className="inline-flex items-center px-6 py-3 border-2 border-[#282828] text-[#ff004f] rounded-lg hover:bg-[#282828] hover:text-[#00BFFF] transition-colors"
                   download
                 >
                   <Download className="w-5 h-5 mr-2" />
