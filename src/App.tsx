@@ -82,7 +82,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                <span className="text-[#ff004f] dark:text-[#00BFFF]">Kunal Raychandani</span>
+                <span className="text-[#9CA3AF] dark:text-[#A3A3A3] hover:text-[#A78BFA] dark:hover:text-[#33CCFF]">Kunal Raychandani</span>
               </h1>
               <div className="flex space-x-4">
                 <a
