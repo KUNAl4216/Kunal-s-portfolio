@@ -91,7 +91,7 @@ function App() {
                   download
                 >
                   <Download className="w-5 h-5 mr-2" />
-                  Download   CV
+                  Download Resume
                 </a>
                 <a
                   href="#contact"
