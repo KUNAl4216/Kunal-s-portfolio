@@ -59,7 +59,7 @@ const experiences = [
     company: 'Vector India',
     role: 'Intern',
     date: 'Mar 2025 - Sept 2025',
-    description: 'Completed professional training in Embedded Systems at Vector India.',
+    description: 'Completed professional training in Embedded Systems at Vector India.- Worked on low-level firmware development and hardware-software integration.Built projects using C, C++ with UART, I2C, SPI, and CAN communication protocols.Hands-on with RTOS, device drivers, and embedded C projects',
   },
   
 ];
@@ -119,7 +119,12 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-[#EAEAEA] dark:text-gray-300 mb-6">
-              Hello! I'm Kunal, an Electronics and Communication (EC) engineering student passionate about Embedded Systems, C programming, and Linux Kernel Development. I love working with low-level hardware, optimizing performance, and building efficient, real-time applications. In addition, I have experience with Python and web development, allowing me to create innovative solutions that bridge hardware and software. Constantly learning and experimenting, I strive to push the boundaries of technology.
+              Hello! I'm Kunal, an Electronics and Communication (EC) engineering student passionate about Embedded Systems, Electronics Engineer specializing in Embedded Systems, Linux Kernel Development, and
+Bootloader Customization. Experienced in USB driver development, kernel-to-user space
+communication, and low-level hardware interactions. Skilled in C, C++, and microcontroller
+programming with strong expertise in UART, I2C, SPI, and CAN protocols. Hands-on experience
+with ESP32, Raspberry Pi, and NRF SDK for real-time and AI-powered applications. Currently
+completing professional Embedded Systems training at Vector India.
               </p>
               <div className="flex space-x-4 mt-8">
                 <button
