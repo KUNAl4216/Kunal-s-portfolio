@@ -107,13 +107,13 @@ function LensAssembly({ lens, aperture }: { lens: LensConfig; aperture: number }
   return (
     <group position={[0, 0, 0.5]}>
       {/* Lens barrel — outer */}
-      <mesh castShadow>
-        <cylinderGeometry args={[0.38, 0.34, lensDepth, 48]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh castShadow rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.38, 0.34, lensDepth, 48]} />
         <meshStandardMaterial color="#1a1a1a" roughness={0.25} metalness={0.5} />
       </mesh>
       {/* Lens barrel — inner step */}
-      <mesh position={[0, 0, lensDepth * 0.3]}>
-        <cylinderGeometry args={[0.34, 0.32, lensDepth * 0.4, 48]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh position={[0, 0, lensDepth * 0.3]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.34, 0.32, lensDepth * 0.4, 48]} />
         <meshStandardMaterial color="#151515" roughness={0.3} metalness={0.4} />
       </mesh>
       {/* Focus ring — rubberized */}
@@ -137,8 +137,8 @@ function LensAssembly({ lens, aperture }: { lens: LensConfig; aperture: number }
         );
       })}
       {/* Front glass element — multi-coated */}
-      <mesh position={[0, 0, lensDepth / 2 + 0.03]}>
-        <cylinderGeometry args={[0.3, 0.3, 0.025, 48]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh position={[0, 0, lensDepth / 2 + 0.03]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.3, 0.3, 0.025, 48]} />
         <meshPhysicalMaterial
           color="#0a1830"
           transparent
@@ -151,13 +151,13 @@ function LensAssembly({ lens, aperture }: { lens: LensConfig; aperture: number }
         />
       </mesh>
       {/* Inner lens element 1 */}
-      <mesh position={[0, 0, lensDepth / 2 - 0.06]}>
-        <cylinderGeometry args={[0.2, 0.22, 0.015, 48]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh position={[0, 0, lensDepth / 2 - 0.06]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.2, 0.22, 0.015, 48]} />
         <meshPhysicalMaterial color="#0a2040" transparent opacity={0.25} roughness={0} />
       </mesh>
       {/* Inner lens element 2 */}
-      <mesh position={[0, 0, lensDepth / 2 - 0.12]}>
-        <cylinderGeometry args={[0.15, 0.18, 0.01, 48]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh position={[0, 0, lensDepth / 2 - 0.12]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.15, 0.18, 0.01, 48]} />
         <meshPhysicalMaterial color="#102040" transparent opacity={0.2} roughness={0} />
       </mesh>
       {/* Aperture blades (simplified) */}
@@ -171,8 +171,8 @@ function LensAssembly({ lens, aperture }: { lens: LensConfig; aperture: number }
         <meshStandardMaterial color="#cc0000" emissive="#880000" emissiveIntensity={0.5} roughness={0.3} />
       </mesh>
       {/* Lens hood */}
-      <mesh position={[0, 0, lensDepth / 2 + 0.12]}>
-        <cylinderGeometry args={[0.4, 0.36, 0.15, 48, 1, true]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh position={[0, 0, lensDepth / 2 + 0.12]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.4, 0.36, 0.15, 48, 1, true]} />
         <meshStandardMaterial color="#111" roughness={0.4} side={THREE.DoubleSide} />
       </mesh>
       {/* Aperture + focal length text */}
@@ -209,8 +209,8 @@ function IRRing({ enabled }: { enabled: boolean }) {
               />
             </mesh>
             {/* LED housing */}
-            <mesh position={[x, y, -0.01]}>
-              <cylinderGeometry args={[0.025, 0.025, 0.015, 8]} rotation={[Math.PI / 2, 0, 0]} />
+            <mesh position={[x, y, -0.01]} rotation={[Math.PI / 2, 0, 0]}>
+              <cylinderGeometry args={[0.025, 0.025, 0.015, 8]} />
               <meshStandardMaterial color="#222" />
             </mesh>
           </group>

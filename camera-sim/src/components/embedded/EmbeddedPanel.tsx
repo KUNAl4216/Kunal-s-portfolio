@@ -386,8 +386,6 @@ export function EmbeddedPanel() {
     return () => clearInterval(id);
   }, [setBoard]);
 
-  const currentBoard = BOARDS.find(b => b.type === board.type) || BOARDS[0];
-
   return (
     <div style={{ padding: 16, overflowY: 'auto', height: '100%' }}>
       <SectionHeader

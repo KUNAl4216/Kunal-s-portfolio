@@ -1,5 +1,5 @@
 import { useRef, useEffect, useCallback, useState } from 'react';
-import { Video, Image, Layers, CameraIcon, ZoomIn, ZoomOut, Download, Grid3x3, Crosshair } from 'lucide-react';
+import { Video, Image, Layers, CameraIcon, ZoomIn, ZoomOut, Grid3x3, Crosshair } from 'lucide-react';
 import { useCamera } from '../../contexts/CameraContext';
 import { useWebcam } from '../../hooks/useWebcam';
 import { useSyntheticVideo } from '../../hooks/useSyntheticVideo';

@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react';
+import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text } from '@react-three/drei';
 import * as THREE from 'three';
@@ -249,8 +249,8 @@ function SecurityCamera({ position }: { position: [number, number, number] }) {
       </mesh>
       {/* Camera body */}
       <group ref={ref}>
-        <mesh position={[0, 0, 0.15]}>
-          <cylinderGeometry args={[0.08, 0.06, 0.3, 16]} rotation={[Math.PI / 2, 0, 0]} />
+        <mesh position={[0, 0, 0.15]} rotation={[Math.PI / 2, 0, 0]}>
+          <cylinderGeometry args={[0.08, 0.06, 0.3, 16]} />
           <meshStandardMaterial color="#eee" roughness={0.3} metalness={0.2} />
         </mesh>
         {/* Lens */}
